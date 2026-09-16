@@ -270,10 +270,6 @@ ol {
   outline-offset: 2px;
 }
 
-.content__list-container {
-  position: relative;
-}
-
 .content__card-link {
   text-decoration: none;
   color: #fff;
