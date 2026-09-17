@@ -54,8 +54,7 @@ ol {
 }
 
 .content {
-  width: 100%;
-  padding: 133px 30px;
+  width: 1140px;
   display: flex;
   flex-direction: row;
   gap: 30px;
@@ -64,7 +63,7 @@ ol {
 
 .result__video-container {
   width: 711px;
-  height: 100%;
+  height: 386px;
   margin-bottom: 16px;
   position: relative;
 }
@@ -82,7 +81,7 @@ ol {
 .result__video {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .search-form {
@@ -165,6 +164,8 @@ ol {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
   font-family: "Oswald", sans-serif;
   margin-bottom: 6px;
@@ -180,12 +181,14 @@ ol {
 .content__video-card-thumbnail {
   min-width: 194px;
   height: 103px;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
 }
 
 .content__video-card-description-container {
+  flex-basis: 0;
   flex-grow: 1;
+  overflow: hidden;
 }
 
 .visually-hidden {
@@ -235,11 +238,12 @@ ol {
 .button {
   background-color: transparent;
   border: 1px solid #fff;
+  font-family: inherit;
   font-weight: 700;
-  font-size: 18px;
+  font-size: inherit;
   text-align: center;
   color: #fff;
-  max-height: 34px;
+  min-height: 34px;
   white-space: nowrap;
   cursor: pointer;
 }
@@ -249,7 +253,7 @@ ol {
 }
 
 .more-button {
-  padding: 6px 142px;
+  min-width: 194px;
   width: 100%;
 }
 
